@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Alternative | EcoArch Living Architecture</title>
+    <meta name="description"
+        content="Premium green roof and living wall installation company specializing in sustainable modern architecture.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22',
+                        },
+                        neutral: {
+                            850: '#1f1f1f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Outfit', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23047857'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'/></svg>">
+</head>
+
+<body
+    class="bg-neutral-50 dark:bg-neutral-950 text-neutral-800 dark:text-neutral-200 antialiased transition-colors duration-300 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header
+        class="fixed w-full top-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md shadow-sm border-b border-neutral-200 dark:border-neutral-800 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+                    <svg class="h-8 w-8 text-emerald-700 dark:text-emerald-500 group-hover:scale-105 transition-transform"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <span
+                        class="font-heading font-bold text-2xl tracking-tight text-neutral-900 dark:text-white">EcoArch</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex space-x-8 items-center" id="desktop-menu">
+                    <a href="index.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home
+                        1</a>
+                    <a href="home2.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home
+                        2</a>
+                    <a href="about.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">About</a>
+                    <a href="services.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Services</a>
+                    <a href="portfolio.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Portfolio</a>
+                    
+                    <a href="contact.html"
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+                </nav>
+
+                <div class="hidden lg:flex items-center space-x-5">
+                    <button id="theme-toggle-desktop"
+                        class="w-9 h-9 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400"
+                        aria-label="Toggle Theme">
+                        <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                    </button>
+                    <button id="rtl-toggle-desktop"
+                        class="w-9 h-9 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
+                        RTL
+                    </button>
+                    <a href="login.html"
+                        class="px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 dark:bg-emerald-600 hover:bg-neutral-800 dark:hover:bg-emerald-500 rounded transition-colors shadow-sm">Client
+                        Portal</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center lg:hidden gap-3">
+                    <button id="mobile-menu-btn"
+                        class="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors">
+                        <svg class="h-6 w-6 block" id="menu-icon-open" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="h-6 w-6 hidden" id="menu-icon-close" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 absolute w-full left-0 shadow-xl"
+            id="mobile-menu">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="index.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home
+                    1</a>
+                <a href="home2.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home
+                    2</a>
+                <a href="about.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">About</a>
+                <a href="services.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Services</a>
+                <a href="portfolio.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Portfolio</a>
+                
+                <a href="contact.html"
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Contact</a>
+
+                <div
+                    class="flex items-center justify-between px-4 py-4 border-t border-neutral-200 dark:border-neutral-800 mt-4">
+                    <button id="theme-toggle-mobile"
+                        class="flex items-center gap-2 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-300">
+                        <span class="dark:hidden">Dark Mode</span>
+                        <span class="hidden dark:inline">Light Mode</span>
+                    </button>
+                    <button id="rtl-toggle-mobile"
+                        class="flex items-center gap-2 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-300">
+                        <span>Toggle RTL</span>
+                    </button>
+                </div>
+                <div class="px-2 pt-2">
+                    <a href="login.html"
+                        class="block w-full text-center px-5 py-3 text-base font-medium text-white bg-neutral-900 dark:bg-emerald-600 rounded transition-colors">Client
+                        Portal</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content wrapper to push footer down -->
+    <main class="flex-grow pt-20">
+
+                <!-- Section 1: Immersive Sustainability Hero -->
+        <section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                    alt="Architectural living wall" class="w-full h-full object-cover object-center" />
+                <div class="absolute inset-0 bg-neutral-900/60 backdrop-blur-[2px]"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+                <div class="max-w-4xl mx-auto py-20">
+                    <div
+                        class="inline-block px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold tracking-widest uppercase rounded mb-6">
+                        Living Architecture Studio
+                    </div>
+                    <h1
+                        class="font-heading text-5xl md:text-6xl font-bold text-white leading-tight mb-8">
+                        Cultivating architecture for a resilient future.
+                    </h1>
+                    <p class="text-xl text-neutral-200 mb-10 font-light leading-relaxed max-w-2xl mx-auto text-balance">
+                        Elevating commercial and residential properties through expertly engineered green roofs and
+                        vertical gardens.
+                    </p>
+                    <a href="services.html"
+                        class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-neutral-900 bg-white hover:bg-neutral-100 rounded transition-colors shadow-lg">
+                        Discover Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Living Architecture Matters -->
+        <section class="py-24 bg-white dark:bg-neutral-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row gap-16 items-center">
+                    <!-- Left: Heading + Text -->
+                    <div class="lg:w-1/2 space-y-6">
+                        <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white">The
+                            Environmental Imperative</h2>
+                        <div class="h-1 w-20 bg-emerald-500"></div>
+                        <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
+                            As urban density increases, integrating plant life into structural surfaces is vital. Green
+                            infrastructure mitigates the urban heat island effect, significantly lowering ambient
+                            temperatures and reducing HVAC energy consumption by up to 20%.
+                        </p>
+                        <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
+                            Beyond temperature management, our systems capture and filter stormwater, reducing municipal
+                            runoff and protecting local waterways, while simultaneously reintroducing essential
+                            biodiversity to concrete-dominated landscapes.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 pt-4">
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <p class="text-2xl font-bold text-neutral-900 dark:text-white">20%</p>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Reduction in HVAC energy costs</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <p class="text-2xl font-bold text-neutral-900 dark:text-white">12°C</p>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Lower ambient facade temperatures</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <p class="text-2xl font-bold text-neutral-900 dark:text-white">40%</p>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Reduction in stormwater runoff</p>
+                            </div>
+                            <div class="border-l-2 border-emerald-500 pl-4">
+                                <p class="text-2xl font-bold text-neutral-900 dark:text-white">3×</p>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Extended roof membrane lifespan</p>
+                            </div>
+                        </div>
+                        <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed pt-2">
+                            Every installation we engineer is designed for the long term — combining premium waterproofing membranes, structured growing media, and precision irrigation systems to maintain ecological performance for decades.
+                        </p>
+                        <ul class="space-y-3 pt-2">
+                            <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <span class="text-emerald-500 font-bold mt-0.5">✓</span> LEED, BREEAM & WELL certification support
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <span class="text-emerald-500 font-bold mt-0.5">✓</span> Integrated smart irrigation & IoT monitoring
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <span class="text-emerald-500 font-bold mt-0.5">✓</span> Wind, load & structural engineering coordination
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <span class="text-emerald-500 font-bold mt-0.5">✓</span> Curated planting by certified horticulturalists
+                            </li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="about.html" class="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 dark:text-white border-b border-current pb-1 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                Learn about our approach &rarr;
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right: Image -->
+                    <div class="lg:w-1/2 w-full">
+                        <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg"
+                            alt="Sustainability impact on modern architecture"
+                            class="w-full h-auto object-cover rounded shadow-lg aspect-[4/3]" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Installation Process -->
+        <section class="py-24 bg-neutral-50 dark:bg-neutral-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mb-16 text-center">Our
+                    Methodology</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Team reviewing architecture plans" class="w-full rounded shadow-lg" />
+                    </div>
+                    <div class="space-y-12 relative">
+                        <!-- Connective line -->
+                        <div class="absolute left-6 top-6 bottom-6 w-0.5 bg-emerald-200 dark:bg-emerald-900/50"></div>
+
+                        <div class="relative pl-16">
+                            <div
+                                class="absolute left-0 top-0 w-12 h-12 rounded-full bg-white dark:bg-neutral-900 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold shadow-sm">
+                                1</div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Site Assessment</h3>
+                            <p class="text-neutral-600 dark:text-neutral-400 text-sm font-light">Structural load
+                                analysis and micro-climate evaluation for optimal green roof viability.</p>
+                        </div>
+
+                        <div class="relative pl-16">
+                            <div
+                                class="absolute left-0 top-0 w-12 h-12 rounded-full bg-white dark:bg-neutral-900 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold shadow-sm">
+                                2</div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Design & Planning
+                            </h3>
+                            <p class="text-neutral-600 dark:text-neutral-400 text-sm font-light">System engineering,
+                                waterproofing coordination, and specialized plant curation.</p>
+                        </div>
+
+                        <div class="relative pl-16">
+                            <div
+                                class="absolute left-0 top-0 w-12 h-12 rounded-full bg-white dark:bg-neutral-900 border-2 border-emerald-500 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold shadow-sm">
+                                3</div>
+                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Execution &
+                                Integration</h3>
+                            <p class="text-neutral-600 dark:text-neutral-400 text-sm font-light">Precision placement of
+                                drainage layers, irrigation calibration, and botanical installation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Project Showcase -->
+        <section class="py-24 bg-white dark:bg-neutral-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mb-16">Select Works</h2>
+
+                <div class="space-y-24">
+                    <!-- Project 1 -->
+                    <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+                        <div class="lg:w-2/3">
+                            <img src="https://images.pexels.com/photos/35215426/pexels-photo-35215426.jpeg"
+                                alt="Extensive green roof on corporate headquarters"
+                                class="w-full h-full object-cover rounded" />
+                        </div>
+                        <div class="lg:w-1/3 flex flex-col justify-between py-4">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-2">Nordic Innovation Center</h3>
+                                <p class="text-emerald-600 dark:text-emerald-400 text-sm font-semibold tracking-wide uppercase mb-4">
+                                    Extensive Green Roof</p>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light mb-6">A 12,000 sq ft undulating green roof acting as natural insulation and public recreation space, integrating seamlessly with the building's structural envelope and drainage systems.</p>
+                                <ul class="text-sm text-neutral-600 dark:text-neutral-400 space-y-3 mb-6 border-l-2 border-emerald-500 pl-4">
+                                    <li><strong>Completion:</strong> Spring 2024</li>
+                                    <li><strong>Scale:</strong> 12,000 sq ft</li>
+                                    <li><strong>Location:</strong> Oslo, Norway</li>
+                                    <li><strong>Features:</strong> Drought-resistant planting, rainwater harvesting</li>
+                                    <li><strong>Certification:</strong> BREEAM Outstanding</li>
+                                </ul>
+                            </div>
+                            <a href="portfolio.html"
+                                class="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors border-b border-current pb-1 w-fit">
+                                View Case Study &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="flex flex-col lg:flex-row-reverse gap-12 items-stretch">
+                        <div class="lg:w-2/3">
+                            <img src="https://images.pexels.com/photos/1188834/pexels-photo-1188834.jpeg"
+                                alt="Interior living wall in atrium" class="w-full h-full object-cover rounded" />
+                        </div>
+                        <div class="lg:w-1/3 flex flex-col justify-between py-4">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-neutral-900 dark:text-white mb-2">Meridian Atrium</h3>
+                                <p class="text-emerald-600 dark:text-emerald-400 text-sm font-semibold tracking-wide uppercase mb-4">
+                                    Interior Living Wall</p>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light mb-6">A five-story internal bio-filter wall utilizing hydroponic systems to purify indoor air quality, reducing particulate matter by up to 60% in high-occupancy commercial spaces.</p>
+                                <ul class="text-sm text-neutral-600 dark:text-neutral-400 space-y-3 mb-6 border-l-2 border-emerald-500 pl-4">
+                                    <li><strong>Completion:</strong> Fall 2023</li>
+                                    <li><strong>Scale:</strong> 5 stories (2,500 sq ft vertical)</li>
+                                    <li><strong>Location:</strong> New York, USA</li>
+                                    <li><strong>Features:</strong> Automated hydroponics, real-time monitoring</li>
+                                    <li><strong>Certification:</strong> WELL Platinum</li>
+                                </ul>
+                            </div>
+                            <a href="portfolio.html"
+                                class="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors border-b border-current pb-1 w-fit">
+                                View Case Study &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Build Greener CTA -->
+        <section
+            class="py-32 bg-neutral-100 dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <img src="https://images.pexels.com/photos/588043/pexels-photo-588043.jpeg" alt="Abstract eco structure"
+                    class="w-full h-full object-cover" />
+            </div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="font-heading text-4xl md:text-5xl font-semibold text-neutral-900 dark:text-white mb-8">
+                    Initiate your project.</h2>
+                <p class="text-xl text-neutral-600 dark:text-neutral-400 mb-12 font-light max-w-2xl mx-auto">
+                    Our team of horticultural architects and structural engineers are ready to discuss the specific
+                    requirements of your next development.
+                </p>
+                <a href="contact.html"
+                    class="inline-flex justify-center items-center px-10 py-5 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded transition-all hover:scale-105 shadow-xl">
+                    Start the Conversation
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-100 dark:bg-neutral-950 text-neutral-600 dark:text-neutral-400 py-16 border-t border-neutral-300 dark:border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+                <!-- Brand -->
+                <div class="space-y-6">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <svg class="h-8 w-8 text-emerald-600 dark:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span class="font-heading font-bold text-2xl tracking-tight text-neutral-900 dark:text-white">EcoArch</span>
+                    </a>
+                    <p class="text-sm leading-relaxed max-w-xs">
+                        Pioneering sustainable architecture through premium green roof and living wall systems for
+                        modern urban spaces.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-500 hover:text-emerald-600 dark:hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-500 hover:text-emerald-600 dark:hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-500 hover:text-emerald-600 dark:hover:text-white transition-colors" aria-label="Twitter">
+                            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-neutral-900 dark:text-white font-heading font-semibold mb-6 uppercase tracking-wider text-sm">Navigation
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="about.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Our Portfolio</a>
+                        </li>
+                        <li>                        </li>
+                        <li><a href="contact.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-neutral-900 dark:text-white font-heading font-semibold mb-6 uppercase tracking-wider text-sm">Expertise
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="services.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Extensive Green
+                                Roofs</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Intensive Roof
+                                Gardens</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Exterior Living
+                                Walls</a></li>
+                        <li><a href="services.html" class="hover:text-emerald-600 dark:text-emerald-500 transition-colors">Long-term
+                                Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-neutral-900 dark:text-white font-heading font-semibold mb-6 uppercase tracking-wider text-sm">Studio</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-3">
+                            <svg class="h-5 w-5 text-neutral-600 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>450 Architecture Blvd, Suite 200<br>Design District, NY 10012</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg class="h-5 w-5 text-neutral-600 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:hello@ecoarch.com"
+                                class="hover:text-emerald-600 dark:hover:text-white transition-colors">hello@ecoarch.com</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <svg class="h-5 w-5 text-neutral-600 flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="mt-16 pt-8 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; 2026 EcoArch Living Architecture. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-emerald-600 dark:hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-emerald-600 dark:hover:text-white transition-colors">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top"
+        class="fixed bottom-8 right-8 bg-neutral-900 dark:bg-emerald-600 text-white dark:text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:-translate-y-1 z-40"
+        aria-label="Scroll to top">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

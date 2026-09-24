@@ -1,2 +1,0 @@
-# Green_Roof_Living_Wall_Installation_Company
-Automated website repository for Green_Roof_Living_Wall_Installation_Company
