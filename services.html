@@ -86,7 +86,7 @@
                         class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
                 </nav>
 
-                <div class="hidden lg:flex items-center gap-5">
+                <div class="hidden lg:flex items-center gap-4">
                     <button id="theme-toggle-desktop"
                         class="w-9 h-9 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400"
                         aria-label="Toggle Theme">
@@ -102,8 +102,12 @@
                         class="w-9 h-9 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
                         RTL
                     </button>
+                    <a href="contact.html?type=quote"
+                        class="px-5 py-2.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded shadow-sm hover:shadow transition-all hover:scale-[1.02]">
+                        Request a Quote
+                    </a>
                     <a href="login.html"
-                        class="px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 dark:bg-emerald-600 hover:bg-neutral-800 dark:hover:bg-emerald-500 rounded transition-colors shadow-sm">Client
+                        class="px-3.5 py-2.5 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Client
                         Portal</a>
                 </div>
 
@@ -158,10 +162,15 @@
                         <span>Toggle RTL</span>
                     </button>
                 </div>
-                <div class="px-2 pt-2">
+                <div class="px-2 pt-2 space-y-2">
+                    <a href="contact.html?type=quote"
+                        class="block w-full text-center px-5 py-3 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded transition-colors shadow">
+                        Request a Quote
+                    </a>
                     <a href="login.html"
-                        class="block w-full text-center px-5 py-3 text-base font-medium text-white bg-neutral-900 dark:bg-emerald-600 rounded transition-colors">Client
-                        Portal</a>
+                        class="block w-full text-center px-5 py-2.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded transition-colors">
+                        Client Portal
+                    </a>
                 </div>
             </div>
         </div>
@@ -171,71 +180,159 @@
     <main class="flex-grow">
 
         <!-- Section 1: Services Introduction -->
-        <section class="min-h-[60vh] flex items-center justify-center relative">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.pexels.com/photos/39207387/pexels-photo-39207387.jpeg"
-                    alt="EcoArch green roof installation" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 bg-neutral-900/60 mix-blend-multiply"></div>
+        <section class="min-h-[65vh] flex items-center justify-center relative bg-neutral-900 overflow-hidden">
+            <div class="absolute inset-0 z-0 img-zoom-wrap">
+                <img src="images/hero-green-roof.jpg"
+                    alt="Panoramic green roof installation" class="w-full h-full object-cover filter brightness-[0.75]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-900/60 to-neutral-950/40"></div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 pt-20">
-                <h1 class="font-heading text-5xl md:text-6xl font-bold text-white mb-6">
-                    Capabilities</h1>
-                <p class="max-w-2xl mx-auto text-neutral-200 text-xl font-light">From expansive
-                    ecological roofs to intricate interior bio-walls, we deliver end-to-end engineering, installation,
-                    and care.</p>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 pt-28 pb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                    Turnkey Living Architecture
+                </div>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+                    Engineering, Installation & Care
+                </h1>
+                <p class="max-w-3xl mx-auto text-neutral-200 text-lg md:text-xl font-light leading-relaxed mb-10">
+                    From lightweight sedum roof blankets to multi-story vertical exterior biomes, we provide end-to-end structural engineering, biological curation, and lifetime maintenance.
+                </p>
+                <!-- Quick Navigation Jump Pills -->
+                <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                    <a href="#green-roofs" class="px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-emerald-500 text-white backdrop-blur-md transition-colors border border-white/20">
+                        Green Roof Systems
+                    </a>
+                    <a href="#living-walls" class="px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-emerald-500 text-white backdrop-blur-md transition-colors border border-white/20">
+                        Living Wall Structures
+                    </a>
+                    <a href="#waterproofing" class="px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-emerald-500 text-white backdrop-blur-md transition-colors border border-white/20">
+                        Envelope & Waterproofing
+                    </a>
+                    <a href="#comparison-guide" class="px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-emerald-500 text-white backdrop-blur-md transition-colors border border-white/20">
+                        System Comparison Guide
+                    </a>
+                    <a href="#maintenance" class="px-4 py-2 rounded-full text-xs font-medium bg-white/10 hover:bg-emerald-500 text-white backdrop-blur-md transition-colors border border-white/20">
+                        Maintenance & Stewardship
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Section 2: Green Roof Systems -->
-        <section class="py-24 bg-white dark:bg-neutral-950">
+        <section id="green-roofs" class="py-24 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div class="lg:sticky lg:top-28 space-y-6">
-                        <img src="https://images.pexels.com/photos/35678260/pexels-photo-35678260.jpeg"
-                            alt="Extensive green roof installation"
-                            class="w-full h-72 object-cover rounded shadow-xl" />
-                        <img src="https://images.pexels.com/photos/31588548/pexels-photo-31588548.jpeg"
-                            alt="Sedum green roof close up"
-                            class="w-full h-72 object-cover rounded shadow-xl hidden lg:block" />
-                    </div>
-                    <div class="space-y-12">
-                        <div>
-                            <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mb-4">Green
-                                Roof Systems</h2>
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light">Transforming unused
-                                space into performing ecological assets.</p>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 group">
+                            <img src="images/green-roof-installation.jpg"
+                                alt="Sedum blanket green roof installation over dimpled retention membrane"
+                                class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-neutral-950/80 text-emerald-400 backdrop-blur-md border border-emerald-500/30">
+                                    Active Installation
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 inset-x-0 bg-neutral-950/75 backdrop-blur-sm p-4 text-white text-xs font-light">
+                                Precision unrolling of pre-cultivated sedum mats on engineered substrate and water retention core.
+                            </div>
                         </div>
 
-                        <div class="space-y-8">
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Extensive
-                                    Systems</h3>
-                                <p class="text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
-                                    Lightweight, low-maintenance roofs featuring shallow growing media (3-6 inches).
-                                    Ideal for large commercial spaces seeking stormwater management and thermal
-                                    regulation with minimal structural reinforcement. Planted with hardy sedums and
-                                    drought-tolerant grasses.</p>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 group hidden lg:block">
+                            <img src="images/tech-campus-green-roof.jpg"
+                                alt="Finished intensive rooftop garden terrace"
+                                class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-neutral-950/80 text-emerald-400 backdrop-blur-md border border-emerald-500/30">
+                                    Completed Project
+                                </span>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Intensive Roof
-                                    Gardens</h3>
-                                <p class="text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">Accessible
-                                    park-like environments requiring deeper soil (8+ inches). These robust systems
-                                    support diverse plant life, including shrubs and small trees, creating high-value
-                                    amenity spaces for residential and commercial developments.</p>
+                            <div class="absolute bottom-0 inset-x-0 bg-neutral-950/75 backdrop-blur-sm p-4 text-white text-xs font-light">
+                                Finished intensive rooftop garden with integrated walking pathways, native trees, and wildflower zones.
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Technical
-                                    Integration</h3>
-                                <ul
-                                    class="list-disc list-inside text-neutral-600 dark:text-neutral-400 font-light space-y-2 mt-2">
-                                    <li>Multi-layer drainage and water retention boards</li>
-                                    <li>High-performance root barrier installation</li>
-                                    <li>Engineered wind-uplift mitigation systems</li>
-                                    <li>Parapet and penetration detailing</li>
-                                </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-10">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Structural Ecology</span>
+                            <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mt-1 mb-4">
+                                Green Roof Systems
+                            </h2>
+                            <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
+                                Transforming dead roof surfaces into performing ecological assets. We design systems precisely tailored to building load capacity, stormwater mandates, and aesthetic goals.
+                            </p>
+                        </div>
+
+                        <!-- System Sub-types -->
+                        <div class="space-y-6">
+                            <div class="p-6 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Extensive Sedum Systems</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">15–30 lbs/sq ft</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Lightweight, low-profile assembly featuring shallow engineered growing media (3–6 inches). Ideal for retrofit commercial roofs and large industrial spans requiring stormwater management and thermal buffering with minimal structural reinforcement.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• Drought-hardy Sedums</span>
+                                    <span>• Low maintenance cycle</span>
+                                    <span>• 70%+ Stormwater capture</span>
+                                </div>
                             </div>
+
+                            <div class="p-6 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Intensive Rooftop Gardens</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">60–150+ lbs/sq ft</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Accessible, park-like amenity spaces requiring deeper engineered substrate (8–36+ inches). Supports mature trees, perennial flowering shrubs, water features, and pedestrian decking for high-value residential and corporate developments.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• Full tenant amenity</span>
+                                    <span>• Deep botanical diversity</span>
+                                    <span>• Sub-surface smart irrigation</span>
+                                </div>
+                            </div>
+
+                            <div class="p-6 rounded-xl bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Biosolar & Retention Roofs</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">Dual Synergy</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Combines photovoltaic solar arrays with living roof vegetation. The vegetative microclimate keeps solar panels at optimal operating temperatures, increasing energy yield by up to 12% while providing storm surge retention.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• +12% Solar efficiency</span>
+                                    <span>• Zero roof penetrations</span>
+                                    <span>• Peak runoff attenuation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Specs Checklist -->
+                        <div>
+                            <h4 class="text-sm font-semibold text-neutral-900 dark:text-white uppercase tracking-wider mb-3">Technical Integration Guarantee</h4>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    Multi-layer drainage reservoir boards
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    FLL-tested anti-root barrier membranes
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    Engineered wind-uplift edge clip detailing
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    Parapet and expansion joint sealing
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -243,119 +340,327 @@
         </section>
 
         <!-- Section 3: Living Wall Systems -->
-        <section class="py-24 bg-neutral-50 dark:bg-neutral-900">
+        <section id="living-walls" class="py-24 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                    <div class="order-2 lg:order-1 space-y-12">
+                    <div class="order-2 lg:order-1 space-y-10">
                         <div>
-                            <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mb-4">Living
-                                Wall Systems</h2>
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light">Vertical flora
-                                integration for striking aesthetic and environmental impact.</p>
+                            <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Vertical Biophilia</span>
+                            <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mt-1 mb-4">
+                                Living Wall Systems
+                            </h2>
+                            <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
+                                Vertical botanical installations engineered for exterior structural facades and interior high-profile corporate environments.
+                            </p>
                         </div>
 
-                        <div class="space-y-8">
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Exterior Facades
-                                </h3>
-                                <p class="text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">Engineered
-                                    to withstand wind sheer, extreme temperatures, and UV exposure. Our exterior systems
-                                    protect building envelopes while dramatically improving local air quality and urban
-                                    biodiversity.</p>
+                        <div class="space-y-6">
+                            <div class="p-6 rounded-xl bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Exterior Architectural Facades</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">Modular Cassettes</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Engineered to endure hurricane-force wind shear, severe thermal fluctuations, and harsh direct sunlight. Our exterior cladding panels feature marine-grade aluminum substructures with integrated drainage troughs and thermal breaks.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• Wind tunnel certified up to 130 mph</span>
+                                    <span>• Non-combustible A1-rated framing</span>
+                                    <span>• Facade heat reduction (-12°C)</span>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">Interior
-                                    Bio-Walls</h3>
-                                <p class="text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">Designed
-                                    for lobbies, atriums, and offices. These systems utilize specialized indoor
-                                    botanicals and integrated lighting to purify air (phytoremediation) and boost
-                                    occupant wellbeing and productivity.</p>
+
+                            <div class="p-6 rounded-xl bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Interior Bio-Wall Atriums</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">Phytoremediation</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Tailored for corporate lobbies, hospitals, and central atriums. These hydroponic or light-substrate walls act as living air filters, absorbing VOCs, carbon dioxide, and fine particulate matter while delivering sound dampening across busy interiors.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• Automated nutrient dosing</span>
+                                    <span>• Full spectrum circadian grow lights</span>
+                                    <span>• Acoustic NRC rating 0.75+</span>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">System
-                                    Architecture</h3>
-                                <ul
-                                    class="list-disc list-inside text-neutral-600 dark:text-neutral-400 font-light space-y-2 mt-2">
-                                    <li>Hydroponic or soil-based modular panel options</li>
-                                    <li>Automated, remotely-monitored fertigation zones</li>
-                                    <li>Custom structural framework and drip trays</li>
-                                    <li>Integrated horticultural lighting design</li>
-                                </ul>
+
+                            <div class="p-6 rounded-xl bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 shadow-sm">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-xl font-semibold text-neutral-900 dark:text-white">Closed-Loop Smart Fertigation</h3>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-medium">IoT Telemetry</span>
+                                </div>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Zero water waste through recirculating subterranean tanks. Smart multi-zone manifolds monitor soil moisture, pH, and electrical conductivity 24/7, sending real-time telemetry to our engineering team.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs text-neutral-500 dark:text-neutral-400">
+                                    <span>• 90% Water reduction vs manual</span>
+                                    <span>• Cellular telemetry sensor alarms</span>
+                                    <span>• Anti-clog pressure-compensating emitters</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="order-1 lg:order-2 lg:sticky lg:top-28 space-y-6">
-                        <img src="https://images.pexels.com/photos/31904286/pexels-photo-31904286.jpeg"
-                            alt="Large scale living wall installation"
-                            class="w-full h-72 object-cover rounded shadow-xl" />
-                        <img src="https://images.pexels.com/photos/1188834/pexels-photo-1188834.jpeg"
-                            alt="Interior living wall"
-                            class="w-full h-72 object-cover rounded shadow-xl hidden lg:block" />
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 group">
+                            <img src="images/exterior-living-wall.jpg"
+                                alt="Exterior living wall on Biophilia Plaza"
+                                class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-neutral-950/80 text-emerald-400 backdrop-blur-md border border-emerald-500/30">
+                                    Exterior Landmark
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 inset-x-0 bg-neutral-950/75 backdrop-blur-sm p-4 text-white text-xs font-light">
+                                Biophilia Plaza 6-story exterior living facade with multi-tiered botanical zoning.
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 group hidden lg:block">
+                            <img src="images/hero-living-wall.jpg"
+                                alt="Interior living wall atrium"
+                                class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-bold bg-neutral-950/80 text-emerald-400 backdrop-blur-md border border-emerald-500/30">
+                                    Interior Atrium
+                                </span>
+                            </div>
+                            <div class="absolute bottom-0 inset-x-0 bg-neutral-950/75 backdrop-blur-sm p-4 text-white text-xs font-light">
+                                Indoor multi-story bio-wall purifying air and enhancing employee wellbeing in corporate HQ.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Maintenance & Long-Term Care -->
-        <section class="py-24 bg-white dark:bg-neutral-950">
+        <!-- Section 4: Structural Envelope & Waterproofing Guarantee -->
+        <section id="waterproofing" class="py-24 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Zero-Leakage Assurance</span>
+                        <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white leading-tight">
+                            Structural Waterproofing & Membrane Protection
+                        </h2>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-lg font-light leading-relaxed">
+                            A living roof is only as good as the waterproofing beneath it. Our certified roofing engineers specialize in seamless hot-air welded membranes, chemical-free root barriers, and electronic leak verification.
+                        </p>
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold flex-shrink-0">
+                                    1
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-neutral-900 dark:text-white text-base">EFVM Electronic Leak Testing</h4>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-xs font-light mt-1">High-voltage vector mapping pinpoints pinhole flaws with 100% precision prior to substrate overburden placement.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold flex-shrink-0">
+                                    2
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-neutral-900 dark:text-white text-base">FLL-Certified Root Barriers</h4>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-xs font-light mt-1">High-density polyethylene shields impervious to root rhizomes, ensuring the structural slab remains untouched forever.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold flex-shrink-0">
+                                    3
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-neutral-900 dark:text-white text-base">25-Year Commercial Warranty</h4>
+                                    <p class="text-neutral-600 dark:text-neutral-400 text-xs font-light mt-1">Single-source manufacturer and installer warranty covering membrane integrity and plant health simultaneously.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-neutral-800 group">
+                            <img src="images/waterproofing-structural.jpg"
+                                alt="Roofing engineer heat-welding waterproof membrane on rooftop parapet"
+                                class="w-full h-auto object-cover aspect-[16/10] group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-neutral-950/90 via-neutral-950/50 to-transparent p-6 text-white">
+                                <div class="font-semibold text-sm text-emerald-400 mb-1">Single-Ply Elastomeric Membrane Seaming</div>
+                                <div class="text-xs text-neutral-300 font-light">Certified robotic and manual hot-air welding on parapets and drainage wells to guarantee a hermetic seal.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: System Comparison Guide -->
+        <section id="comparison-guide" class="py-24 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 scroll-mt-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Decision Matrix</span>
+                    <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mt-1 mb-4">
+                        System Comparison & Technical Specifications
+                    </h2>
+                    <p class="text-neutral-600 dark:text-neutral-400 font-light">
+                        Select the optimal living system for your project's structural load capacity, occupancy intent, and environmental requirements.
+                    </p>
+                </div>
+
+                <div class="overflow-x-auto shadow-xl rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="border-b border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/80 text-neutral-900 dark:text-white">
+                                <th class="p-5 font-semibold">System Type</th>
+                                <th class="p-5 font-semibold">Substrate Depth</th>
+                                <th class="p-5 font-semibold">Saturated Weight</th>
+                                <th class="p-5 font-semibold">Irrigation Needs</th>
+                                <th class="p-5 font-semibold">Accessibility</th>
+                                <th class="p-5 font-semibold">LEED Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-neutral-700 dark:text-neutral-300">
+                            <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors">
+                                <td class="p-5 font-medium text-emerald-700 dark:text-emerald-400">
+                                    Extensive Green Roof
+                                    <span class="block text-xs font-normal text-neutral-500">Sedum carpet</span>
+                                </td>
+                                <td class="p-5">3 – 6 inches</td>
+                                <td class="p-5">15 – 30 lbs/sq ft</td>
+                                <td class="p-5">Minimal / Natural Rain</td>
+                                <td class="p-5">Maintenance Only</td>
+                                <td class="p-5 font-semibold text-emerald-600 dark:text-emerald-400">SS + WE Credits</td>
+                            </tr>
+                            <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors">
+                                <td class="p-5 font-medium text-emerald-700 dark:text-emerald-400">
+                                    Semi-Intensive Roof
+                                    <span class="block text-xs font-normal text-neutral-500">Perennials & grasses</span>
+                                </td>
+                                <td class="p-5">6 – 10 inches</td>
+                                <td class="p-5">35 – 55 lbs/sq ft</td>
+                                <td class="p-5">Periodic Drip Assist</td>
+                                <td class="p-5">Walkways & Terrace</td>
+                                <td class="p-5 font-semibold text-emerald-600 dark:text-emerald-400">SS + EA + WE</td>
+                            </tr>
+                            <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors">
+                                <td class="p-5 font-medium text-emerald-700 dark:text-emerald-400">
+                                    Intensive Roof Park
+                                    <span class="block text-xs font-normal text-neutral-500">Trees, shrubs & plazas</span>
+                                </td>
+                                <td class="p-5">10 – 36+ inches</td>
+                                <td class="p-5">60 – 160+ lbs/sq ft</td>
+                                <td class="p-5">Automated Multi-Zone</td>
+                                <td class="p-5">Full Public Access</td>
+                                <td class="p-5 font-semibold text-emerald-600 dark:text-emerald-400">LEED Platinum Core</td>
+                            </tr>
+                            <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors">
+                                <td class="p-5 font-medium text-emerald-700 dark:text-emerald-400">
+                                    Exterior Living Wall
+                                    <span class="block text-xs font-normal text-neutral-500">Modular facade panels</span>
+                                </td>
+                                <td class="p-5">Modular cassette</td>
+                                <td class="p-5">12 – 18 lbs/sq ft vert</td>
+                                <td class="p-5">Automated Fertigation</td>
+                                <td class="p-5">Visual Facade</td>
+                                <td class="p-5 font-semibold text-emerald-600 dark:text-emerald-400">Heat Island + Carbon</td>
+                            </tr>
+                            <tr class="hover:bg-neutral-50 dark:hover:bg-neutral-900/50 transition-colors">
+                                <td class="p-5 font-medium text-emerald-700 dark:text-emerald-400">
+                                    Interior Living Bio-Wall
+                                    <span class="block text-xs font-normal text-neutral-500">Hydroponic atrium wall</span>
+                                </td>
+                                <td class="p-5">Hydroponic / Rockwool</td>
+                                <td class="p-5">8 – 14 lbs/sq ft vert</td>
+                                <td class="p-5">Closed-Loop Tank</td>
+                                <td class="p-5">Indoor Occupant Zone</td>
+                                <td class="p-5 font-semibold text-emerald-600 dark:text-emerald-400">WELL Platinum + IEQ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Maintenance & Long-Term Care -->
+        <section id="maintenance" class="py-24 bg-white dark:bg-neutral-950 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto text-center mb-16">
-                    <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mb-6">Long-Term
-                        Stewardship</h2>
-                    <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light">A living system is dynamic. We
-                        provide comprehensive preventative care programs to ensure the architectural intent matures
-                        beautifully over decades.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Guaranteed Longevity</span>
+                    <h2 class="font-heading text-4xl font-semibold text-neutral-900 dark:text-white mt-1 mb-4">
+                        Long-Term Horticultural Stewardship
+                    </h2>
+                    <p class="text-lg text-neutral-600 dark:text-neutral-400 font-light leading-relaxed">
+                        A living architectural system evolves over decades. Our preventative stewardship programs ensure that the botanical vigor and hydraulic efficiency mature smoothly through every season.
+                    </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    <div
-                        class="relative overflow-hidden rounded group border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                        <img src="https://images.pexels.com/photos/5230955/pexels-photo-5230955.jpeg"
-                            alt="Horticulture care"
-                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
-                        <div class="p-8">
-                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-4">Horticultural Care
-                            </h3>
-                            <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed">
-                                Scheduled pruning, weed abatement, pest management, and seasonal plant replacements to
-                                maintain intended design patterns.</p>
+                    <div class="eco-card rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 flex flex-col">
+                        <div class="img-zoom-wrap h-56">
+                            <img src="images/living-wall-maintenance.jpg"
+                                alt="Horticulturist conducting botanical pruning on living wall"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Horticultural Care</h3>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Seasonal pruning, organic integrated pest management (IPM), weed eradication, and immediate plant replacement under our 98% botanical vitality guarantee.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Scheduled Bi-Weekly / Monthly</span>
                         </div>
                     </div>
 
-                    <div
-                        class="relative overflow-hidden rounded group border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                        <img src="https://images.pexels.com/photos/31454645/pexels-photo-31454645.jpeg"
-                            alt="System Diagnostics"
-                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
-                        <div class="p-8">
-                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-4">System Diagnostics
-                            </h3>
-                            <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed">
-                                Rigorous testing of irrigation sensors, valve operations, structural mount integrity,
-                                and drainage flow capacity.</p>
+                    <div class="eco-card rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 flex flex-col">
+                        <div class="img-zoom-wrap h-56">
+                            <img src="images/waterproofing-structural.jpg"
+                                alt="Diagnostic inspection of roof drainage and flashings"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Hydraulic & Drain Audits</h3>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Pressure calibration of irrigation zones, sensor telemetry verification, backflow testing, and physical clearing of roof drains and scuppers before rainy seasons.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Quarterly Audit & Winterization</span>
                         </div>
                     </div>
 
-                    <div
-                        class="relative overflow-hidden rounded group border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900">
-                        <img src="https://images.pexels.com/photos/8851075/pexels-photo-8851075.jpeg"
-                            alt="Soil Analysis"
-                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
-                        <div class="p-8">
-                            <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-4">Soil & Water
-                                Analysis</h3>
-                            <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed">
-                                Bi-annual laboratory testing of media pH and nutrient levels to adjust fertigation
-                                dosing for optimal plant resilience.</p>
+                    <div class="eco-card rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 flex flex-col">
+                        <div class="img-zoom-wrap h-56">
+                            <img src="images/balcony-living-wall.jpg"
+                                alt="Botanical laboratory soil and nutrient analysis"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Substrate & Nutrient Testing</h3>
+                                <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
+                                    Laboratory media analysis measuring pH, cation exchange capacity (CEC), salinity, and microbial activity to formulate micro-nutrient fertigation recipes.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Bi-Annual Laboratory Reports</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center">
-                    <a href="contact.html"
-                        class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-white bg-neutral-900 dark:bg-emerald-600 hover:bg-neutral-800 dark:hover:bg-emerald-500 rounded transition-colors shadow-sm">
-                        Discuss a Maintenance Plan
-                    </a>
+                <div class="p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-neutral-900/80 border border-emerald-500/30 flex flex-col lg:flex-row justify-between items-center gap-6">
+                    <div class="space-y-1 text-center lg:text-left">
+                        <h4 class="text-2xl font-semibold text-neutral-900 dark:text-white">Ready to plan your living architectural project?</h4>
+                        <p class="text-neutral-600 dark:text-neutral-400 text-sm font-light">Whether you need an extensive sedum installation, an interior bio-wall, or custom structural maintenance.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-3 w-full lg:w-auto">
+                        <a href="contact.html?type=quote"
+                            class="px-6 py-3.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg shadow-md transition-all whitespace-nowrap hover:-translate-y-0.5">
+                            Request a Quote
+                        </a>
+                        <a href="portfolio.html"
+                            class="px-6 py-3.5 text-sm font-semibold text-neutral-900 dark:text-white bg-white/10 hover:bg-white/20 border border-neutral-300 dark:border-neutral-700 rounded-lg transition-all whitespace-nowrap hover:-translate-y-0.5">
+                            View Projects
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

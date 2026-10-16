@@ -108,12 +108,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Form validations
+    // Form validations & URL Query Params Handling
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
+        // Check for URL query params such as ?type=quote or ?type=green-roof
+        const urlParams = new URLSearchParams(window.location.search);
+        const typeParam = urlParams.get('type');
+        const projectSelect = document.getElementById('project-type');
+        
+        if (typeParam) {
+            if (projectSelect) {
+                if (typeParam === 'green-roof') projectSelect.value = 'green-roof';
+                else if (typeParam === 'living-wall') projectSelect.value = 'living-wall';
+                else if (typeParam === 'maintenance') projectSelect.value = 'maintenance';
+                else if (typeParam === 'consultation' || typeParam === 'quote') projectSelect.value = 'consultation';
+            }
+            
+            // Smoothly scroll down to contact form if linked with quote parameter
+            setTimeout(() => {
+                contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const nameInput = document.getElementById('name');
+                if (nameInput) nameInput.focus();
+            }, 300);
+        }
+
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Enquiry submitted successfully!');
+            alert('Enquiry submitted successfully! An EcoArch architectural specialist will review your request and get back to you within 24 hours.');
             contactForm.reset();
         });
     }

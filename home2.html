@@ -86,7 +86,7 @@
                         class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
                 </nav>
 
-                <div class="hidden lg:flex items-center gap-5">
+                <div class="hidden lg:flex items-center gap-4">
                     <button id="theme-toggle-desktop"
                         class="w-9 h-9 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400"
                         aria-label="Toggle Theme">
@@ -102,8 +102,12 @@
                         class="w-9 h-9 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
                         RTL
                     </button>
+                    <a href="contact.html?type=quote"
+                        class="px-5 py-2.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded shadow-sm hover:shadow transition-all hover:scale-[1.02]">
+                        Request a Quote
+                    </a>
                     <a href="login.html"
-                        class="px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 dark:bg-emerald-600 hover:bg-neutral-800 dark:hover:bg-emerald-500 rounded transition-colors shadow-sm">Client
+                        class="px-3.5 py-2.5 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Client
                         Portal</a>
                 </div>
 
@@ -158,10 +162,15 @@
                         <span>Toggle RTL</span>
                     </button>
                 </div>
-                <div class="px-2 pt-2">
+                <div class="px-2 pt-2 space-y-2">
+                    <a href="contact.html?type=quote"
+                        class="block w-full text-center px-5 py-3 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded transition-colors shadow">
+                        Request a Quote
+                    </a>
                     <a href="login.html"
-                        class="block w-full text-center px-5 py-3 text-base font-medium text-white bg-neutral-900 dark:bg-emerald-600 rounded transition-colors">Client
-                        Portal</a>
+                        class="block w-full text-center px-5 py-2.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded transition-colors">
+                        Client Portal
+                    </a>
                 </div>
             </div>
         </div>
@@ -173,9 +182,9 @@
         <!-- Section 1: Immersive Sustainability Hero -->
         <section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-                    alt="Architectural living wall" class="w-full h-full object-cover object-center" />
-                <div class="absolute inset-0 bg-neutral-900/60 backdrop-blur-[2px]"></div>
+                <img src="images/hero-living-wall.jpg"
+                    alt="Architectural living wall" class="w-full h-full object-cover object-center filter brightness-[0.7]" />
+                <div class="absolute inset-0 bg-neutral-950/60 backdrop-blur-[2px]"></div>
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
@@ -191,10 +200,21 @@
                         Elevating commercial and residential properties through expertly engineered green roofs and
                         vertical gardens.
                     </p>
-                    <a href="services.html"
-                        class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-neutral-900 bg-white hover:bg-neutral-100 rounded transition-colors shadow-lg">
-                        Discover Our Services
-                    </a>
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+                        <a href="contact.html?type=quote"
+                            class="inline-flex justify-center items-center gap-2 px-8 py-4 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg shadow-lg shadow-emerald-950/50 transition-all hover:-translate-y-0.5">
+                            <span>Request a Quote</span>
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="services.html"
+                            class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-neutral-900 bg-white hover:bg-neutral-100 rounded-lg transition-all shadow-md hover:-translate-y-0.5">
+                            Explore Our Services
+                        </a>
+                        <a href="portfolio.html"
+                            class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-white border border-white/30 hover:bg-white/10 backdrop-blur-sm rounded-lg transition-all hover:-translate-y-0.5">
+                            View Projects
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -243,7 +263,7 @@
                     </div>
                     <!-- Right: Image -->
                     <div class="lg:w-1/2 w-full">
-                        <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg"
+                        <img src="images/exterior-living-wall.jpg"
                             alt="Sustainability impact on modern architecture"
                             class="w-full h-auto object-cover rounded shadow-lg aspect-[4/3]" />
                     </div>
@@ -259,8 +279,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Team reviewing architecture plans" class="w-full rounded shadow-lg" />
+                        <img src="images/green-roof-installation.jpg"
+                            alt="Technical living roof installation process" class="w-full rounded shadow-lg" />
                     </div>
                     <div class="space-y-12 relative">
                         <!-- Connective line -->
@@ -308,7 +328,7 @@
                     <!-- Project 1 -->
                     <div class="flex flex-col lg:flex-row gap-12 items-stretch">
                         <div class="lg:w-2/3">
-                            <img src="https://images.pexels.com/photos/35215426/pexels-photo-35215426.jpeg"
+                            <img src="images/tech-campus-green-roof.jpg"
                                 alt="Extensive green roof on corporate headquarters"
                                 class="w-full h-full object-cover rounded" />
                         </div>
@@ -342,7 +362,7 @@
                     <!-- Project 2 -->
                     <div class="flex flex-col lg:flex-row-reverse gap-12 items-stretch">
                         <div class="lg:w-2/3">
-                            <img src="https://images.pexels.com/photos/13012256/pexels-photo-13012256.jpeg"
+                            <img src="images/library-living-wall.jpg"
                                 alt="Interior living wall in atrium" class="w-full h-full object-cover rounded" />
                         </div>
                         <div class="lg:w-1/3 flex flex-col justify-between py-4">
@@ -378,8 +398,8 @@
         <section
             class="py-32 bg-neutral-100 dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800 relative overflow-hidden">
             <div class="absolute inset-0 opacity-10">
-                <img src="https://images.pexels.com/photos/588043/pexels-photo-588043.jpeg" alt="Abstract eco structure"
-                    class="w-full h-full object-cover" />
+                <img src="images/hero-green-roof.jpg" alt="Rooftop green ecosystem"
+                    class="w-full h-full object-cover filter brightness-40" />
             </div>
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <h2 class="font-heading text-4xl md:text-5xl font-semibold text-neutral-900 dark:text-white mb-8">
@@ -388,10 +408,21 @@
                     Our team of horticultural architects and structural engineers are ready to discuss the specific
                     requirements of your next development.
                 </p>
-                <a href="contact.html"
-                    class="inline-flex justify-center items-center px-10 py-5 text-lg font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded transition-all hover:scale-105 shadow-xl">
-                    Start the Conversation
-                </a>
+                <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+                    <a href="contact.html?type=quote"
+                        class="inline-flex justify-center items-center gap-2 px-8 py-4 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg shadow-lg shadow-emerald-950/50 transition-all hover:-translate-y-0.5">
+                        <span>Request a Quote</span>
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="services.html"
+                        class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-neutral-900 dark:text-white bg-neutral-200 dark:bg-neutral-800 hover:bg-neutral-300 dark:hover:bg-neutral-700 rounded-lg transition-all hover:-translate-y-0.5">
+                        Explore Our Services
+                    </a>
+                    <a href="portfolio.html"
+                        class="inline-flex justify-center items-center px-8 py-4 text-base font-medium text-neutral-600 dark:text-neutral-400 hover:text-emerald-600 dark:hover:text-emerald-400 border border-neutral-300 dark:border-neutral-700 rounded-lg transition-all hover:-translate-y-0.5">
+                        View Projects
+                    </a>
+                </div>
             </div>
         </section>
 

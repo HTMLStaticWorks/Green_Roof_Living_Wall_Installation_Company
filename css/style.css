@@ -1,10 +1,80 @@
-
-/* Custom styles */
+/* Nature-Focused Architectural Design System */
 @layer utilities {
     .text-balance {
         text-wrap: balance;
     }
 }
+
 html {
     scroll-behavior: smooth;
+}
+
+/* Botanical Glow and Accent Shadows */
+.eco-card {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.eco-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 35px -10px rgba(5, 150, 105, 0.15), 0 8px 16px -6px rgba(0, 0, 0, 0.08);
+}
+
+.dark .eco-card:hover {
+    box-shadow: 0 20px 35px -10px rgba(16, 185, 129, 0.2), 0 8px 16px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* Layer Diagram & Interactive System Anatomy */
+.layer-row {
+    transition: all 0.25s ease;
+}
+
+.layer-row:hover, .layer-row.active {
+    background-color: rgba(16, 185, 129, 0.08);
+    border-left-color: #059669;
+    transform: translateX(4px);
+}
+
+.dark .layer-row:hover, .dark .layer-row.active {
+    background-color: rgba(5, 150, 105, 0.15);
+    border-left-color: #34d399;
+}
+
+/* Nature Badge Styling */
+.badge-eco {
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1) 0%, rgba(16, 185, 129, 0.18) 100%);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: #047857;
+}
+
+.dark .badge-eco {
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.25) 0%, rgba(16, 185, 129, 0.2) 100%);
+    border: 1px solid rgba(52, 211, 153, 0.3);
+    color: #6ee7b7;
+}
+
+/* High-clarity Image Container with Subtle Botanical Sheen */
+.img-zoom-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-zoom-wrap img {
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+.img-zoom-wrap:hover img {
+    transform: scale(1.05);
+}
+
+/* Glassmorphism Accents */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-panel {
+    background: rgba(23, 23, 23, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
