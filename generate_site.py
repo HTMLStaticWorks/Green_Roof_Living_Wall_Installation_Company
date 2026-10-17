@@ -59,7 +59,7 @@ shared_header = """
     <!-- Header -->
     <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md shadow-sm border-b border-neutral-200 dark:border-neutral-800 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-20 gap-4 xl:gap-8">
                 <!-- Logo -->
                 <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
                     <svg class="h-8 w-8 text-emerald-700 dark:text-emerald-500 group-hover:scale-105 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -69,30 +69,30 @@ shared_header = """
                 </a>
                 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-8 items-center" id="desktop-menu">
-                    <a href="index.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home 1</a>
-                    <a href="home2.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home 2</a>
-                    <a href="about.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">About</a>
-                    <a href="services.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Services</a>
-                    <a href="portfolio.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Portfolio</a>
-                    <a href="blog.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Blog</a>
-                    <a href="contact.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+                <nav class="hidden lg:flex gap-5 xl:gap-8 items-center flex-shrink-0" id="desktop-menu">
+                    <a href="index.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Home 1</a>
+                    <a href="home2.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Home 2</a>
+                    <a href="about.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">About</a>
+                    <a href="services.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Services</a>
+                    <a href="portfolio.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Portfolio</a>
+                    <a href="contact.html" class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Contact</a>
                 </nav>
 
-                <div class="hidden md:flex items-center space-x-5">
-                    <button id="theme-toggle-desktop" class="p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-neutral-500 dark:text-neutral-400" aria-label="Toggle Theme">
+                <div class="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
+                    <button id="theme-toggle-desktop" class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400" aria-label="Toggle Theme">
                         <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
                         <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
                     </button>
-                    <button id="rtl-toggle-desktop" class="text-xs font-semibold px-2 py-1 border border-neutral-300 dark:border-neutral-600 rounded text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+                    <button id="rtl-toggle-desktop" class="w-9 h-9 flex-shrink-0 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
                         RTL
                     </button>
-                    <a href="login.html" class="px-5 py-2.5 text-sm font-medium text-white bg-neutral-900 dark:bg-emerald-600 hover:bg-neutral-800 dark:hover:bg-emerald-500 rounded transition-colors shadow-sm">Client Portal</a>
+                    <a href="contact.html?type=quote" class="px-4 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded shadow-sm hover:shadow transition-all hover:scale-[1.02] whitespace-nowrap flex-shrink-0">Request a Quote</a>
+                    <a href="login.html" class="px-3 py-2 xl:px-3.5 xl:py-2.5 text-xs xl:text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors whitespace-nowrap flex-shrink-0">Client Portal</a>
                 </div>
 
                 <!-- Mobile menu button -->
-                <div class="flex items-center md:hidden gap-3">
-                    <button id="mobile-menu-btn" class="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors">
+                <div class="flex items-center lg:hidden gap-3">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors" aria-label="Toggle navigation menu">
                         <svg class="h-6 w-6 block" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -105,15 +105,14 @@ shared_header = """
         </div>
 
         <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 absolute w-full left-0 shadow-xl" id="mobile-menu">
+        <div class="lg:hidden hidden bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800 absolute top-full left-0 w-full shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto" id="mobile-menu">
             <div class="px-4 pt-4 pb-6 space-y-2">
-                <a href="index.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home 1</a>
-                <a href="home2.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home 2</a>
-                <a href="about.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">About</a>
-                <a href="services.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Services</a>
-                <a href="portfolio.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Portfolio</a>
-                <a href="blog.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Blog</a>
-                <a href="contact.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Contact</a>
+                <a href="index.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Home 1</a>
+                <a href="home2.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Home 2</a>
+                <a href="about.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">About</a>
+                <a href="services.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Services</a>
+                <a href="portfolio.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Portfolio</a>
+                <a href="contact.html" class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Contact</a>
                 
                 <div class="flex items-center justify-between px-4 py-4 border-t border-neutral-200 dark:border-neutral-800 mt-4">
                     <button id="theme-toggle-mobile" class="flex items-center gap-2 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-300">
@@ -124,8 +123,9 @@ shared_header = """
                         <span>Toggle RTL</span>
                     </button>
                 </div>
-                <div class="px-2 pt-2">
-                     <a href="login.html" class="block w-full text-center px-5 py-3 text-base font-medium text-white bg-neutral-900 dark:bg-emerald-600 rounded transition-colors">Client Portal</a>
+                <div class="px-2 pt-2 space-y-2">
+                    <a href="contact.html?type=quote" class="block w-full text-center px-5 py-3 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded transition-colors shadow whitespace-nowrap">Request a Quote</a>
+                    <a href="login.html" class="block w-full text-center px-5 py-2.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded transition-colors whitespace-nowrap">Client Portal</a>
                 </div>
             </div>
         </div>

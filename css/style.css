@@ -78,3 +78,46 @@ html {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
+
+/* Nav Link Enhancement & Active Underline Indicator */
+.nav-link {
+    white-space: nowrap;
+    position: relative;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #059669;
+    transition: width 0.25s ease;
+    border-radius: 9999px;
+}
+
+.dark .nav-link::after {
+    background-color: #34d399;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Card Heading Baseline Uniformity: Ensures subtexts start at identical vertical baseline */
+.eco-card h3 {
+    min-height: 3.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Prevent text overflow on small mobile viewports */
+h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+}
+
+

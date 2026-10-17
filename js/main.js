@@ -97,12 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (linkPath === currentPath) {
             // Desktop active classes
             if (link.classList.contains('nav-link')) {
-                link.classList.add('text-emerald-700', 'dark:text-emerald-400');
+                link.classList.add('text-emerald-700', 'dark:text-emerald-400', 'active');
                 link.classList.remove('text-neutral-600', 'dark:text-neutral-300');
             }
             // Mobile active classes
             if (link.classList.contains('mobile-nav-link')) {
-                link.classList.add('text-emerald-700', 'dark:text-emerald-400', 'bg-emerald-50', 'dark:bg-emerald-900/30');
+                link.classList.add('text-emerald-700', 'dark:text-emerald-400', 'bg-emerald-50', 'dark:bg-emerald-900/30', 'active');
                 link.classList.remove('text-neutral-700', 'dark:text-neutral-200');
             }
         }

@@ -55,7 +55,7 @@
         class="fixed w-full top-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md shadow-sm border-b border-neutral-200 dark:border-neutral-800 transition-all duration-300"
         id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-20 gap-4 xl:gap-8">
                 <!-- Logo -->
                 <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
                     <svg class="h-8 w-8 text-emerald-700 dark:text-emerald-500 group-hover:scale-105 transition-transform"
@@ -68,27 +68,24 @@
                 </a>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden lg:flex gap-8 items-center" id="desktop-menu">
+                <nav class="hidden lg:flex gap-5 xl:gap-8 items-center flex-shrink-0" id="desktop-menu">
                     <a href="index.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home
-                        1</a>
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Home 1</a>
                     <a href="home2.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Home
-                        2</a>
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Home 2</a>
                     <a href="about.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">About</a>
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">About</a>
                     <a href="services.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Services</a>
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Services</a>
                     <a href="portfolio.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Portfolio</a>
-
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Portfolio</a>
                     <a href="contact.html"
-                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors">Contact</a>
+                        class="nav-link text-sm font-medium text-neutral-600 hover:text-emerald-700 dark:text-neutral-300 dark:hover:text-emerald-400 transition-colors whitespace-nowrap">Contact</a>
                 </nav>
 
-                <div class="hidden lg:flex items-center gap-4">
+                <div class="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
                     <button id="theme-toggle-desktop"
-                        class="w-9 h-9 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400"
+                        class="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-600 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all text-neutral-500 dark:text-neutral-400"
                         aria-label="Toggle Theme">
                         <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                             <path
@@ -99,22 +96,22 @@
                         </svg>
                     </button>
                     <button id="rtl-toggle-desktop"
-                        class="w-9 h-9 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
+                        class="w-9 h-9 flex-shrink-0 flex items-center justify-center text-[11px] font-bold tracking-wider border border-neutral-300 dark:border-neutral-600 rounded-full text-neutral-500 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-900 dark:hover:text-white transition-all">
                         RTL
                     </button>
                     <a href="contact.html?type=quote"
-                        class="px-5 py-2.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded shadow-sm hover:shadow transition-all hover:scale-[1.02]">
+                        class="px-4 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded shadow-sm hover:shadow transition-all hover:scale-[1.02] whitespace-nowrap flex-shrink-0">
                         Request a Quote
                     </a>
                     <a href="login.html"
-                        class="px-3.5 py-2.5 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Client
-                        Portal</a>
+                        class="px-3 py-2 xl:px-3.5 xl:py-2.5 text-xs xl:text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors whitespace-nowrap flex-shrink-0">Client Portal</a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="flex items-center lg:hidden gap-3">
                     <button id="mobile-menu-btn"
-                        class="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors">
+                        class="p-2 rounded-md text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors"
+                        aria-label="Toggle navigation menu">
                         <svg class="h-6 w-6 block" id="menu-icon-open" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -131,24 +128,21 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="lg:hidden hidden bg-white dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800 absolute w-full left-0 shadow-xl"
+        <div class="lg:hidden hidden bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800 absolute top-full left-0 w-full shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto"
             id="mobile-menu">
             <div class="px-4 pt-4 pb-6 space-y-2">
                 <a href="index.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home
-                    1</a>
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Home 1</a>
                 <a href="home2.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Home
-                    2</a>
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Home 2</a>
                 <a href="about.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">About</a>
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">About</a>
                 <a href="services.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Services</a>
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Services</a>
                 <a href="portfolio.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Portfolio</a>
-
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Portfolio</a>
                 <a href="contact.html"
-                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors">Contact</a>
+                    class="mobile-nav-link block px-4 py-3 rounded text-base font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors whitespace-nowrap">Contact</a>
 
                 <div
                     class="flex items-center justify-between px-4 py-4 border-t border-neutral-200 dark:border-neutral-800 mt-4">
@@ -164,11 +158,11 @@
                 </div>
                 <div class="px-2 pt-2 space-y-2">
                     <a href="contact.html?type=quote"
-                        class="block w-full text-center px-5 py-3 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded transition-colors shadow">
+                        class="block w-full text-center px-5 py-3 text-base font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded transition-colors shadow whitespace-nowrap">
                         Request a Quote
                     </a>
                     <a href="login.html"
-                        class="block w-full text-center px-5 py-2.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded transition-colors">
+                        class="block w-full text-center px-5 py-2.5 text-sm font-medium text-neutral-600 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded transition-colors whitespace-nowrap">
                         Client Portal
                     </a>
                 </div>
@@ -602,7 +596,7 @@
                         </div>
                         <div class="p-8 flex-grow flex flex-col justify-between">
                             <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Horticultural Care</h3>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">Horticultural Care</h3>
                                 <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
                                     Seasonal pruning, organic integrated pest management (IPM), weed eradication, and immediate plant replacement under our 98% botanical vitality guarantee.
                                 </p>
@@ -619,7 +613,7 @@
                         </div>
                         <div class="p-8 flex-grow flex flex-col justify-between">
                             <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Hydraulic & Drain Audits</h3>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">Hydraulic & Drain Audits</h3>
                                 <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
                                     Pressure calibration of irrigation zones, sensor telemetry verification, backflow testing, and physical clearing of roof drains and scuppers before rainy seasons.
                                 </p>
@@ -636,7 +630,7 @@
                         </div>
                         <div class="p-8 flex-grow flex flex-col justify-between">
                             <div>
-                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3">Substrate & Nutrient Testing</h3>
+                                <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-3 min-h-[3.5rem] flex items-start">Substrate & Nutrient Testing</h3>
                                 <p class="text-neutral-600 dark:text-neutral-400 font-light text-sm leading-relaxed mb-4">
                                     Laboratory media analysis measuring pH, cation exchange capacity (CEC), salinity, and microbial activity to formulate micro-nutrient fertigation recipes.
                                 </p>
@@ -646,18 +640,18 @@
                     </div>
                 </div>
 
-                <div class="p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-emerald-950/60 to-neutral-900/80 border border-emerald-500/30 flex flex-col lg:flex-row justify-between items-center gap-6">
-                    <div class="space-y-1 text-center lg:text-left">
-                        <h4 class="text-2xl font-semibold text-neutral-900 dark:text-white">Ready to plan your living architectural project?</h4>
-                        <p class="text-neutral-600 dark:text-neutral-400 text-sm font-light">Whether you need an extensive sedum installation, an interior bio-wall, or custom structural maintenance.</p>
+                <div class="p-8 sm:p-10 rounded-2xl bg-neutral-900 border border-emerald-500/30 flex flex-col lg:flex-row justify-between items-center gap-6 shadow-xl">
+                    <div class="space-y-2 text-center lg:text-left">
+                        <h4 class="text-2xl font-semibold text-white">Ready to plan your living architectural project?</h4>
+                        <p class="text-neutral-200 text-sm font-light">Whether you need an extensive sedum installation, an interior bio-wall, or custom structural maintenance.</p>
                     </div>
-                    <div class="flex flex-wrap items-center justify-center gap-3 w-full lg:w-auto">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 w-full lg:w-auto">
                         <a href="contact.html?type=quote"
-                            class="px-6 py-3.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg shadow-md transition-all whitespace-nowrap hover:-translate-y-0.5">
+                            class="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3.5 text-sm font-semibold text-neutral-950 bg-emerald-400 hover:bg-emerald-300 rounded-lg shadow-md transition-all whitespace-nowrap hover:-translate-y-0.5">
                             Request a Quote
                         </a>
                         <a href="portfolio.html"
-                            class="px-6 py-3.5 text-sm font-semibold text-neutral-900 dark:text-white bg-white/10 hover:bg-white/20 border border-neutral-300 dark:border-neutral-700 rounded-lg transition-all whitespace-nowrap hover:-translate-y-0.5">
+                            class="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3.5 text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/25 rounded-lg transition-all whitespace-nowrap hover:-translate-y-0.5">
                             View Projects
                         </a>
                     </div>
